@@ -20,7 +20,7 @@ This server will listen on the specified port and run a new thread for each inco
 ### 2. Message Management
 Nobody wants to deal with the minutia formatting text into valid Http Messages, so we do that for you with the abstract class `HttpMessage` and its lovely children `HttpRequest` and `HttpResponse`.
 
-These are just one piece of the Yin-Yang relationship. There is still the "Connection Manager". Our `HttpConnectionManager` takes on the responsibility of managing the socket streams, parsing those chars and bytes into your `HttpRequest` and sending your `HttpResponse` back down the pipe, closing out the socket when you're mission is complete.
+These are just one piece of the Yin-Yang relationship. There is still the *Connection Manager*. Our `HttpConnectionManager` takes on the responsibility of managing the socket streams, parsing those chars and bytes into your `HttpRequest` and sending your `HttpResponse` back down the pipe, closing out the socket when your mission is complete.
 
 I haven't gone overboard with my implementation of these classes (I don't think) and you will most likely want to supplement them. That's great! I do think I have provided the skeleton you'll be able to leave in the closet. Namely:
 
